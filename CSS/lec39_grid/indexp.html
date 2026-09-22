@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Container{
+            border:2px solid  salmon;
+            display: grid;
+             grid-template-areas: "nav nav nav"
+                "side article article"
+                "footer footer footer";
+                margin: 10px;
+                padding: 10px;
+
+        }
+
+    .Item{
+        border: 5px solid rgb(28, 11, 22);
+        background-color: rgb(246, 151, 7);
+        /* width: 5vw;
+        height: 55px; */
+
+    }
+    
+    .item-1{
+          border: 7px solid rgb(31, 43, 33);
+          background-color: rgb(227, 193, 246);
+               /* width: 5vw; */
+               grid-area: nav;
+          
+
+    }
+     .item2{
+          border: 7px solid rgb(238, 6, 6);
+          background-color: rgb(222, 135, 170);
+               /* width: 5vw; */
+               grid-area: side;
+
+    }
+
+     .item3{
+          border: 7px solid rgb(161, 6, 238);
+          background-color: rgb(152, 135, 222);
+               /* width: 15vw; */
+               grid-area: article;
+
+    }
+
+     .item4{
+          border: 7px solid rgb(238, 6, 130);
+          background-color: rgb(235, 7, 7);
+               /* width: 25vw; */
+               grid-area:footer;
+
+    }
+    .item5{
+          border: 7px solid rgb(238, 103, 6);
+          background-color: burlywood;
+               /* width: 5vw; */
+
+    }
+    .item6{
+          border: 7px solid rgb(161, 238, 6);
+          background-color: burlywood;
+               /* width: 5vw; */
+
+    }
+    .item7{
+          border: 7px solid rgb(230, 238, 6);
+          background-color: rgb(174, 235, 6);
+               /* width: 5vw; */
+
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    </style>
+</head>
+
+
+<body>
+
+    <div class="Container">
+
+        <div class="Item item-1">1</div>
+        <div class="Item item-2">2</div>
+        <div class="Item item-3">3</div>
+        <div class="Item item-4">4</div>
+        <div class="Item item-5">5</div>
+        <div class="Item item-6">6</div>
+        <div class="Item item-7">7</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>

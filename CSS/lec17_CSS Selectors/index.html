@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* External selector */
+        /* div{
+            /* background-color: brown;
+            color: blue; */
+         */
+        /* Class Selectors */
+       .red{
+
+            background-color: yellow;
+            color: orange;
+        }
+        /* Id Selectors */
+        #green{
+
+            background-color: greenyellow;
+        }
+        /* Child Selectors */
+        div > p{
+            color: palevioletred;
+            background-color: aliceblue;
+            /* decendant Selectors */
+        }
+        /* Universal Selectors */
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        /* Pseudo Selctors */
+        a:visited{
+            color: rgb(195, 25, 25);
+        }
+        a:link{
+            color: blueviolet;
+        }
+        a:active{
+            background-color: rgb(8, 8, 9);
+        }
+        a:hover{
+            background-color: gold;
+        }
+        .red h1 {
+             color: red;}
+    
+             .red p {
+                color: aqua;
+                background-color: blueviolet;
+             }
+             /* Targets the 1st paragraph (lai bhai) */
+.red p:nth-of-type(1) {
+  color: orange;
+}
+
+/* Targets the 2nd paragraph (Ab bata) */
+.red p:nth-of-type(2) {
+  color: blue;
+  background-color: yellow;
+}
+
+
+
+
+      
+    </style>
+</head>
+<body>
+    <div class="red">
+             <h1>heloo this div</h1>
+             <p>lai bhai </p>
+             <p>Ab bata </p>
+    </div>
+
+    
+    <div id="green">
+        bolo elloooooo
+    </div>
+    <div>
+        <a href="https://google.com">Go to Google</a>
+         <a href="https://youtube4.com">Go to youtube</a>
+    </div>
+</body>
+</html>

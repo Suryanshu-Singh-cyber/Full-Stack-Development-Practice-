@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Responsive Layout</title>
+    <style>
+        @import url('https://googleapis.com');
+
+        :root {
+            --primary-color: #f052e3cc;
+            --text-color: #ffffff;
+            --secondary-color: #dfa0dfcc;
+        }
+
+        /* CSS Box-Sizing Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--secondary-color);
+            min-height: 100vh;
+        }
+
+        /* Flexible Navigation Bar */
+        nav {
+            background-color: var(--primary-color);
+            padding: 15px 5%;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.2s ease;
+        }
+
+        ul li a:hover {
+            opacity: 0.8;
+        }
+
+        /* Flexbox Wrapper Layout */
+        .mainbox {
+            background-color: #adff2f;
+            border: 2px solid #008000;
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Block-Level Box Elements */
+        .box1 {
+            background-color: #e60cf1;
+            border: 2px solid #ec0cd5;
+            padding: 40px;
+            color: var(--text-color);
+            text-align: center;
+            width: 100%;
+        }
+
+        .box2 {
+            background-color: #0cf1e6;
+            border: 2px solid #04283b;
+            padding: 40px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .Outbox {
+            background-color: #000000;
+            min-height: 50vh;
+            color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Perfect Sticky/Fixed Circle Button */
+        .orangebox {
+            height: 45px;
+            width: 45px;
+            background: #ffa500;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            color: #000000;
+            font-weight: bold;
+        }
+
+        /* Responsive Breakpoints for Tablet/Desktop Layouts */
+        @media (min-width: 768px) {
+            .mainbox {
+                flex-direction: row;
+            }
+            .box1, .box2 {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Swapped to semantic block elements for clean container structure -->
+    <main class="mainbox">
+        <div class="box1">BOX1</div>
+        <div class="box2">BOX2</div>
+    </main>
+
+    <section class="Outbox">
+        <p>This is what I want to learn</p>
+    </section>
+
+    <div class="orangebox">O</div>
+</body>
+</html>
