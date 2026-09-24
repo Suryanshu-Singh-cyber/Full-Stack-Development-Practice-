@@ -18,4 +18,4 @@ function facfor(number){
     
 }
 console.log(factorail(a))
-console.log(facfor(a))
+console.log(facfor(a))  
